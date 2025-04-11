@@ -6,6 +6,7 @@ addr. led sig.
 wand
 A7
 
+10K resistors below are an estimate. they depend on the phototransisor's sensitivity. they must be equal, though.
 
 wand internals
 

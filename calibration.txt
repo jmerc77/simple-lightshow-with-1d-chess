@@ -1,0 +1,4 @@
+1. hold wand button while powering on
+2. release button and touch wand sensor against led bar
+3. hold button down while moving wand up and down the leds. be sure the wand sensor stays in contact with led bar
+4. release button

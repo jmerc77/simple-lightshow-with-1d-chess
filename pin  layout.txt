@@ -1,0 +1,55 @@
+use only external 5V supply! leds use a lot of power. use at least 2A output for psu/power brick. do not supply via 5V pin. its better to apply 5V to usb 5V with a jumper to protect your PC by removal to disconnect from MCU (and its board) but directly connect the external supply to led 5V. add 10uF - 500uF electrolytic capacitance near mcu and additional 0.1uF ceramic for smoothing to help reduce power related glitches. (do as i say not as i do. i left my caps out, lol. i have not had any issues so far, though.)
+
+addr. led sig.
+2
+
+wand
+A7
+
+
+wand internals
+
+n
+p
+n
+
+p
+h
+o    w_red
+t      ^
+o      |
+     __o__
+t   |     |
+r   | b | o
+a   | t-|
+n   | n | o
+s...|     |
+->| /     > 
+->|<      >  (10K)
+->|'\`    <
+... |__o__|
+i      |
+s      V
+t    w_blk
+o
+r
+
+analog A7 wiring (for wand)
+
+    +5V
+     ^
+     |
+     <
+     >  (10K)
+     <
+     |
+     o--> w_red
+A7 <_|
+
+w_blk
+  ^
+  |
+  V
+  v
+  *
+ GND

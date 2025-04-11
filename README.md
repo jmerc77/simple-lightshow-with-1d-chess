@@ -14,3 +14,6 @@ Basic instructions on how to interpet the game board and wand usage.
 
 ## xmas_leds
 The folder for the code. The arduino ino file inside contains all of my code. One libraray is required (Adafruit_NeoPixel).
+
+# Usage
+Plug a 5V adaptor with at least 2A output (and flip the power switch if added) for power. To start a 1D chess game, press the button on the wand. Play the game as described in chess.pdf and when the game finishes, the strip returns to decorations. If the wand is "glitching" by flashing too many white LED sequences, see calibration.txt to re-calibrate the wand. It is helpfull to read in advanced of course.
